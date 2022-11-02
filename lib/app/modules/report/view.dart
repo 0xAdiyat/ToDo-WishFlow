@@ -42,9 +42,12 @@ class ReportPage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      _buildStatus(Colors.green, liveTasks, 'Live Tasks'),
-                      _buildStatus(Colors.orange, completedTasks, 'Completed'),
-                      _buildStatus(Colors.blue, createdTasks, 'Created'),
+                      _buildStatus(Color.fromARGB(255, 22, 22, 22), liveTasks,
+                          'Live Tasks'),
+                      _buildStatus(Color.fromARGB(255, 22, 22, 22),
+                          completedTasks, 'Completed'),
+                      _buildStatus(Color.fromARGB(255, 22, 22, 22),
+                          createdTasks, 'Created'),
                     ],
                   ),
                 ),
@@ -120,7 +123,7 @@ class ReportPage extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(
-              width: 1.5.wp,
+              width: 1.6.wp,
               color: color,
             ),
           ),
