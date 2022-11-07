@@ -4,14 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:todo_wishflow/app/core/utils/extensions.dart';
 import 'package:todo_wishflow/app/data/models/task.dart';
 import 'package:todo_wishflow/app/modules/details/view.dart';
-import 'package:todo_wishflow/app/modules/details/widgets/done_list.dart';
 import 'package:todo_wishflow/app/modules/home/controller.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class TaskCard extends StatelessWidget {
-  final homeCtrl = Get.find<HomeController>();
   final Task task;
   TaskCard({super.key, required this.task});
+  final homeCtrl = Get.find<HomeController>();
 
   @override
   Widget build(BuildContext context) {
@@ -32,11 +31,11 @@ class TaskCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.grey[900],
           borderRadius: BorderRadius.circular(20),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Color.fromARGB(255, 252, 122, 122),
               blurRadius: 5,
-              offset: const Offset(0, 7),
+              offset: Offset(0, 7),
             )
           ],
         ),
@@ -46,7 +45,7 @@ class TaskCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 11, right: 10),
               child: StepProgressIndicator(
-                roundedEdges: Radius.circular(10),
+                roundedEdges: const Radius.circular(10),
                 totalSteps: homeCtrl.isTodoEmpty(task) ? 1 : task.todos!.length,
                 currentStep:
                     homeCtrl.isTodoEmpty(task) ? 0 : homeCtrl.getDoneTodo(task),
@@ -94,7 +93,7 @@ class TaskCard extends StatelessWidget {
                   Row(
                     children: [
                       _buildTaskStatus(task),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       _buildTaskStatusDone(task)
                     ],
                   ),
@@ -111,34 +110,34 @@ class TaskCard extends StatelessWidget {
 }
 
 Widget _buildTaskStatus(task) {
-  var _createdTasksCurrent;
-  var _createdTasksLeft;
+  int createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
+  var createdTasksLeft;
 
-  if (_createdTasksCurrent != 0) {
-    _createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
-    _createdTasksLeft = task.todos?.length - _createdTasksCurrent;
+  if (createdTasksCurrent != 0) {
+    var createdTasksCurrent2 = createdTasksCurrent;
+    createdTasksLeft = task.todos?.length - createdTasksCurrent2;
   } else {
-    _createdTasksCurrent = 1;
-    _createdTasksLeft = 1;
+    createdTasksCurrent = 1;
+    createdTasksLeft = 1;
   }
   return Container(
     width: 71,
     height: 30.5,
     decoration: BoxDecoration(
-      color: Color.fromARGB(255, 24, 25, 25),
+      color: const Color.fromARGB(255, 24, 25, 25),
       boxShadow: [
         BoxShadow(
-          color: Color.fromARGB(255, 25, 25, 25).withOpacity(0.5),
+          color: const Color.fromARGB(255, 25, 25, 25).withOpacity(0.5),
           spreadRadius: 5,
           blurRadius: 7,
-          offset: Offset(0, 3), // changes position of shadow
+          offset: const Offset(0, 3), // changes position of shadow
         ),
       ],
       borderRadius: BorderRadius.circular(20),
     ),
     child: Center(
       child: Text(
-        '${_createdTasksLeft > 0 ? _createdTasksLeft : 0} left',
+        '${createdTasksLeft > 0 ? createdTasksLeft : 0} left',
         style: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 10,
@@ -150,18 +149,18 @@ Widget _buildTaskStatus(task) {
 }
 
 Widget _buildTaskStatusDone(task) {
-  var _createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
+  var createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
 
   return Container(
     width: 64,
     height: 27,
     decoration: BoxDecoration(
-      color: Color.fromARGB(255, 252, 244, 243),
+      color: const Color.fromARGB(255, 252, 244, 243),
       borderRadius: BorderRadius.circular(20),
     ),
     child: Center(
       child: Text(
-        '${_createdTasksCurrent} done',
+        '$createdTasksCurrent done',
         style: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 10,
