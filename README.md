@@ -73,7 +73,7 @@
 
 
 <p align="center">
-  <img src = "https://raw.githubusercontent.com/Huss4in007/ToDo-WishFlow/master/wishflow_mockups/MockupMain.png" width=450>
+  <img src = "https://raw.githubusercontent.com/Huss4in007/ToDo-WishFlow/master/wishflow_mockups/MockupMain.png" width=350>
 </p>
 
 <p align="right">● <a href="#wishflow-top">back to top</a></p>
@@ -102,7 +102,7 @@ Create task and track your daily life easily. Built with Flutter and used GitX P
 <br></br>
 
 
-<img align="left" width="300" height="300" src="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/wishflow_mockups/ToDo%20WishFlow%20Banner.png">
+<img align="center" src="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/wishflow_mockups/ToDo%20WishFlow%20Banner.png">
 
 
 
