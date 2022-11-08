@@ -102,7 +102,7 @@ Create task and track your daily life easily. Built with Flutter and used GitX P
 <br></br>
 
 
-<img align="center" src="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/wishflow_mockups/ToDo%20WishFlow%20Banner.png">
+<img align="center" src="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/wishflow_mockups/ToDo%20WishFlow%20Banner.gif">
 
 
 
@@ -110,13 +110,6 @@ Create task and track your daily life easily. Built with Flutter and used GitX P
 
 <!-- ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
- -->
+* [![Flutter][Flutter.dev]][https://flutter.dev/]
+
 <p align="right">● <a href="#wishflow-top">back to top</a></p>
