@@ -99,7 +99,6 @@ Create task and track your daily life easily. Built with Flutter and used GitX P
 * Take notes
 * And more
 
-<br></br>
 
 
 <img align="center" src="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/wishflow_mockups/ToDo%20WishFlow%20Banner.gif">
