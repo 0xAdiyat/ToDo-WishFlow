@@ -119,7 +119,7 @@ Widget _buildTaskStatus({
 }) {
   var createdTasksLeft = 0;
   if (task != null) {
-    final createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task!);
+    final createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
     final totalTodos = task.todos?.length ?? 0;
     createdTasksLeft = totalTodos - createdTasksCurrent;
   }
