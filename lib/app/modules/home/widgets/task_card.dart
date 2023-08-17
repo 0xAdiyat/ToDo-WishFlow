@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:step_progress_indicator/step_progress_indicator.dart';
 import 'package:todo_wishflow/app/core/utils/extensions.dart';
 import 'package:todo_wishflow/app/data/models/task.dart';
 import 'package:todo_wishflow/app/modules/details/view.dart';
 import 'package:todo_wishflow/app/modules/home/controller.dart';
-import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 class TaskCard extends StatelessWidget {
   final Task task;
@@ -16,6 +16,7 @@ class TaskCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = HexColor.fromHex(task.color);
     var squareWidth = Get.width - 12.0.wp;
+    final isEmptyTodos = task.todos == null || task.todos!.isEmpty;
 
     return GestureDetector(
       onTap: () {
@@ -92,9 +93,13 @@ class TaskCard extends StatelessWidget {
                   SizedBox(height: 2.0.wp),
                   Row(
                     children: [
-                      _buildTaskStatus(task),
+                      isEmptyTodos
+                          ? _buildTaskStatus()
+                          : _buildTaskStatus(task: task),
                       const SizedBox(width: 10),
-                      _buildTaskStatusDone(task)
+                      isEmptyTodos
+                          ? _buildTaskStatusDone()
+                          : _buildTaskStatusDone(task: task)
                     ],
                   ),
                   // check the todos whether it's null or not,
@@ -109,17 +114,16 @@ class TaskCard extends StatelessWidget {
   }
 }
 
-Widget _buildTaskStatus(task) {
-  int createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
-  var createdTasksLeft;
-
-  if (createdTasksCurrent != 0) {
-    var createdTasksCurrent2 = createdTasksCurrent;
-    createdTasksLeft = task.todos?.length - createdTasksCurrent2;
-  } else {
-    createdTasksCurrent = 1;
-    createdTasksLeft = 1;
+Widget _buildTaskStatus({
+  Task? task,
+}) {
+  var createdTasksLeft = 0;
+  if (task != null) {
+    final createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task!);
+    final totalTodos = task.todos?.length ?? 0;
+    createdTasksLeft = totalTodos - createdTasksCurrent;
   }
+
   return Container(
     width: 71,
     height: 30.5,
@@ -130,14 +134,16 @@ Widget _buildTaskStatus(task) {
           color: const Color.fromARGB(255, 25, 25, 25).withOpacity(0.5),
           spreadRadius: 5,
           blurRadius: 7,
-          offset: const Offset(0, 3), // changes position of shadow
+          offset: const Offset(0, 3),
         ),
       ],
       borderRadius: BorderRadius.circular(20),
     ),
     child: Center(
       child: Text(
-        '${createdTasksLeft > 0 ? createdTasksLeft : 0} left',
+        task == null
+            ? '0 left'
+            : '${createdTasksLeft > 0 ? createdTasksLeft : 0} left',
         style: const TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 10,
@@ -148,8 +154,11 @@ Widget _buildTaskStatus(task) {
   );
 }
 
-Widget _buildTaskStatusDone(task) {
-  var createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
+Widget _buildTaskStatusDone({Task? task}) {
+  var createdTasksCurrent = 0;
+  if (task != null) {
+    createdTasksCurrent = Get.find<HomeController>().getDoneTodo(task);
+  }
 
   return Container(
     width: 64,

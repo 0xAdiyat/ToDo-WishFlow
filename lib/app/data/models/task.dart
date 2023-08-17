@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:equatable/equatable.dart';
 
 class Task extends Equatable {
@@ -45,8 +44,8 @@ class Task extends Equatable {
         'color': color,
         'todos': todos,
       };
-      
-        @override
-        // TODO: implement props
-        List<Object?> get props => [title, icon, color];
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => [title, icon, color];
 }
