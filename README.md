@@ -3,7 +3,7 @@
 
 <h2 align="center"> ToDo - WishFLow </h2> <br>
 <p align="center">
-  <a href="https://github.com/Huss4in007/ToDo-WishFlow/releases/tag/v1.0.1">
+  <a href="https://github.com/Huss4in007/ToDo-WishFlow/releases/tag/v1.0.2">
     <img src="https://raw.githubusercontent.com/Huss4in007/ToDo-WishFlow/master/assets/splash.png" alt="Logo" width="80" height="80">
   </a>
 </p>
@@ -11,18 +11,18 @@
 
 
 <p align="center">
-  A Flutter based ToDo app made with GetX Package.
+  A Flutter-based ToDo app made with GetX Package.
 </p>
 
 
 
 
 <p align="center">
-  <a href="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/flutter-apk/ToDo%20-%20WishFlow.apk">
+  <a href="https://github.com/0xAdiyat/ToDo-WishFlow/releases/download/v1.0.2/ToDo-WishFlow.v1.0.2.apk">
     <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="120">
   </a>
 
-  <a href="https://github.com/Huss4in007/ToDo-WishFlow/blob/master/flutter-apk/ToDo%20-%20WishFlow.apk">
+  <a href="https://github.com/0xAdiyat/ToDo-WishFlow/releases/download/v1.0.2/ToDo-WishFlow.v1.0.2.apk">
     <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png" width="120">
   </a>
 </p>
@@ -31,14 +31,14 @@
 
  <p align="center">
 <br />
-    <a href="https://github.com/Huss4in007/ToDo-WishFlow/"><strong>EXPLORE ● THE DOCS</strong></a>
+    <a href="https://github.com/0xAdiyat/ToDo-WishFlow/"><strong>EXPLORE ● THE DOCS</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Huss4in007/ToDo-WishFlow/">View Demo</a>
+    <a href="https://github.com/0xAdiyat/ToDo-WishFlow/">View Demo</a>
     ·
-    <a href="https://github.com/Huss4in007/ToDo-WishFlow/issues">Report Bug</a>
+    <a href="https://github.com/0xAdiyat/ToDo-WishFlow/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Huss4in007/ToDo-WishFlow/issues">Request Feature</a>
+    <a href="https://github.com/0xAdiyat/ToDo-WishFlow/issues">Request Feature</a>
   </p>
 
 
@@ -89,10 +89,10 @@ Create task and track your daily life easily. Built with Flutter and used GitX P
 ### Daily planner
 * Organize your life
 * Add tasks and lists with the To Do widget
-* Daily organizer personalized with bold and colorful ui
+* Daily organizer personalized with bold and colorful UI
 * Apply badge and labels
 
-### To Do lists for any purpose
+### ToDo lists for any purpose
 * Bill planner
 * Shopping list
 * Task management
