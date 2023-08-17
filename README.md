@@ -74,8 +74,7 @@
   <img src = "https://raw.githubusercontent.com/Huss4in007/ToDo-WishFlow/master/wishflow_mockups/MockupMain.png" width=350>
 </p>
 
-<p align="right">● <a href="#wishflow-top">back to top</a></p>
-
+<br>
 
 Create tasks and track your daily life easily. Built with Flutter and used GitX Package.
 
