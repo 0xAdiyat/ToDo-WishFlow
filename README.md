@@ -60,8 +60,6 @@
         <li><a href="#Daily-planner">Daily planner</a></li>
         <li><a href="#To-Do-lists-for-any-purpose">To Do lists for any purpose</a></li>
       </ul>
-    </li>
-  
   </ol>
 </details>
 
@@ -76,10 +74,9 @@
   <img src = "https://raw.githubusercontent.com/Huss4in007/ToDo-WishFlow/master/wishflow_mockups/MockupMain.png" width=350>
 </p>
 
-<p align="right">● <a href="#wishflow-top">back to top</a></p>
+<br>
 
-
-Create task and track your daily life easily. Built with Flutter and used GitX Package.
+Create tasks and track your daily life easily. Built with Flutter and used GitX Package.
 
 
 
@@ -105,11 +102,31 @@ Create task and track your daily life easily. Built with Flutter and used GitX P
 
 
 
+<br>
 
-<!-- 
-< ### Built With
+## License
 
-* [![Flutter][Flutter.dev]][https://flutter.dev/]
- -->
+MIT License
 
+Copyright (c) 2023 Ahsaf Hussain Adiyat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+<br>
 <p align="right">● <a href="#wishflow-top">back to top</a></p>
