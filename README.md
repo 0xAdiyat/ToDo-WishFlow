@@ -27,6 +27,11 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://apt.izzysoft.de/fdroid/index/apk/com.anon007.todo_wishflow/">
+    <img alt="Download on the IzzyOnDroid" title="App Store" src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" width="120">
+  </a>
+</p>
 
 
  <p align="center">
